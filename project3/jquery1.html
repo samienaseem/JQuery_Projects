@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>jQuery</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function () {
+
+		var j=[];/*["p1.png","p2.png","p3.png","p4.png"];*/
+		for (var i = 0; i < 4	; i++) {
+
+				j[i]=$("li").eq(i).css("background-image");
+		}
+
+		$(".one").click(function() {
+
+
+
+			$("li").eq(0).css("background-image",j[3]);
+			$("li").eq(1).css("background-image",j[0]);
+			$("li").eq(2).css("background-image",j[1]);
+			$("li").eq(3).css("background-image",j[2]);
+
+			for (var i = 0; i < j.length; i++) {
+				
+				j[i]=$("li").eq(i).css("background-image");
+			}
+
+
+		})
+
+		$(".two").click(function(){
+
+			$("li").eq(0).css("background-image",j[1]);
+			$("li").eq(1).css("background-image",j[2]);
+			$("li").eq(2).css("background-image",j[3]);
+			$("li").eq(3).css("background-image",j[0]);
+
+			for (var i = 0; i <j.length ; i++) {
+
+				j[i]=$("li").eq(i).css("background-image");	
+
+			}
+		})
+		/*for (var i = 0; i < 4; i++) {
+			j[i]=$("li").eq(i)/*.css("backward-image");
+			alert(j[i]);
+		}*/
+		
+		/*/*$(".one").click( function() {
+			
+		});*/
+	});
+		
+	</script>
+</head>
+<body>
+	<div class="main">
+
+		<button class="one">forward</button>
+		<button class="two">backward</button>
+
+		<div class="image">
+			<ul>
+				<li class="a"></li>
+				<li class="b"></li>
+				<li class="c"></li>
+				<li class="d"></li>
+				
+			</ul>
+		</div>
+
+		
+	</div>
+
+</body>
+</html>

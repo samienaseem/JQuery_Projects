@@ -1,0 +1,42 @@
+.main{
+	height: 300px;
+	width: 100%;
+	position: relative;
+	border:2px solid red;
+	box-sizing: border-box;
+}
+.image ul {
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	position: absolute;
+	left: 200px;
+
+}
+.image ul li {
+	display: inline-block;
+	height: 250px;
+	width: 160px;
+	border:2px solid black;
+}
+.a{
+	background-image: url("p1.png");
+}
+.b{
+	background-image: url("p2.png");
+}
+.c{
+	background-image: url("p3.png");
+}
+.d{
+	background-image: url("p4.png");
+}
+.one,.two {
+	position: absolute;
+	top: 125px;
+	left: 60px;
+}
+.one{
+	top: 125px;
+	left: 940px;
+}

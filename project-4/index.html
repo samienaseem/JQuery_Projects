@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>project-4</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+
+			var j=["p1.png","p2.png","p3.png","p4.png","img1.png","img3.png","img5.png","img6.png","img7.png","img8.png"];
+			var id,a;
+			var i=0;
+			
+
+			$(".tap").click(function(){
+				
+				 a=(Math.floor(Math.random()*10));	
+				id=setInterval(rand,100);
+				
+			})
+
+			function rand() {
+				
+				
+				$("img").attr("src",j[i]);
+				console.log(a);
+				i++;
+
+				if(i==10){
+
+					i=0;
+					$("img").attr("src",j[a]);
+					clearInterval(id);
+				}
+				
+				
+
+				
+			}
+		})
+
+
+	</script>
+</head>
+<body>
+
+	<div class="main">
+
+		<button class="tap"> play </button>
+
+		<div class="text">
+			<h3>Random</h3>
+		</div>
+
+		<div class="box">
+
+			<img src="p1.png">
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>

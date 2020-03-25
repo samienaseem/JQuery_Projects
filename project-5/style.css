@@ -1,0 +1,37 @@
+.main{
+	position: relative;
+	left: 200px;
+	width: 1040px;
+}
+
+.main ul  {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+li{
+
+	height: 300px;
+	width: 200px;
+	border:2px solid black;
+	display: inline-block;
+}
+img{
+
+	height: 300px;
+	width: 200px;
+}
+.one,.two,.tap {
+	position: relative;
+	top: -60px;
+	left:1130px;
+}
+.two,.tap {
+	left: -80px;
+}
+.tap{
+	top: -100px;
+	left: 64px;
+}

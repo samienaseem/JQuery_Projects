@@ -1,0 +1,38 @@
+.main {
+	position: relative;
+	width: 100%;
+}
+.container{
+	position: relative;
+	margin: auto;
+	width: 80%;
+	border:2px solid black;
+}
+.container ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	width: 85%;
+	margin: auto;
+
+}
+.container ul li {
+	display: inline-block;
+	height: 250px;
+	width: 300px;
+	border:2px solid red;
+	margin-left: 25px;
+}
+img {
+	height: 250px;
+	width: 300px;
+	opacity: 0;
+
+}
+.text {
+	
+	text-align: center;
+}
+/*sam{
+	display: none;
+}*/

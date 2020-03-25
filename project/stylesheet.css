@@ -1,0 +1,46 @@
+.box1 {
+	position: relative;
+	display: inline;
+}
+.box1 p {
+	float: left;
+	margin: 0px;
+	padding:0px;
+
+}
+.inside {
+	height: 50px;
+	width: 50px;
+	/*position: absolute;*/
+	background-color: red;
+	float: left;
+	margin-left: 10px;
+	border:2px solid black;
+}
+.box2 ul  {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+
+}
+.box2 ul li {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border:2px solid black;
+	margin-top: 10px;
+
+}
+.color1 {
+	background-color: green;
+}
+.color2 {
+	background-color: blue;
+}
+.color3 {
+	background-color: cyan;
+}
+.color4 {
+	background-color: maroon;
+}

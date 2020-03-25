@@ -1,0 +1,39 @@
+.main{
+	position: relative;
+}
+.main ul {
+
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+
+}
+.main ul li {
+
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	border:2px solid black;
+
+}
+.q{
+
+	background-color: red;
+}
+.w{
+	background-color: yellow;
+}
+.e{
+
+	background-color: blue;
+}
+.r{
+	background-color: maroon;
+}
+.two{
+	height: 100px;
+	width: 100px;
+	background-color:white;
+	border:2px solid black;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>project-5 dynamically add image to the slider</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			var j=[];
+			var n=0;
+
+			for (var i = 0; i < 4; i++) {
+				j[i]=$("img").eq(i).attr("src");
+				//alert(j[i]);
+			}
+				$("body").on("click", ".one",function() {
+				var m=0;
+				var t=2;
+				$("img").eq(m).attr("src",j[n+3]);
+				$("img").eq(m+1).attr("src",j[0]);
+				$("img").eq(m+2).attr("src",j[1]);
+				/*$("img").eq(m+3).attr("src",j[2]);*/
+				while(t<j.length){
+						$("img").eq(t+1).attr("src",j[t]);
+						t++;
+				}
+				for (var i = 0; i < j.length; i++) {
+				j[i]=$("img").eq(i).attr("src");
+			}
+			})
+			var l=0;
+			$(".tap").click(function() {
+
+				var y=["img1.png","img3.png","img5.png","img6.png","img7.png","img8.png"];
+					var b=j.length;
+					b++;
+				var e=$("<li><img src=''></li>");
+				$(".main ul").append(e);
+				$("img:last").attr("src",y[l]);
+				l++;
+				n++;
+				for (var i = 0; i < b; i++) {
+					j[i]=$("img").eq(i).attr("src");
+					
+				}
+
+			})
+		})
+
+	</script>
+</head>
+<body>
+
+	<div class="main">
+
+		<ul>
+			<li><img src="p1.png"></li>
+			<li><img src="p2.png"></li>
+			<li><img src="p3.png"></li>
+			<li><img src="p4.png"></li>
+			
+		</ul>
+		
+	</div>
+	<button class="tap"> click to add new  </button>
+	<button class="one">NEXT</button>
+	<button class="two">PREVIOUS</button>
+
+</body>
+</html>
